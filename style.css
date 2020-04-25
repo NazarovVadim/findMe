@@ -1,0 +1,251 @@
+/* font-family: 'Poiret One', cursive; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    transition: all .1s linear;
+    user-select: none;
+}
+img{
+    user-select: none;
+}
+body,html{
+    font-family: 'Montserrat Alternates', sans-serif; 
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+.headerb:before{
+    border-radius: 25%;
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(to left top,rgba(20, 29, 75,1), rgb(151, 113, 222));
+    width: 120%;
+    height: 100%;
+    right: -2%;
+    top: -75%;
+    z-index: -1;
+}
+.header{
+    user-select: none;
+    padding-left: 10px;
+    padding-top: 25px;
+    text-align: left;
+    line-height: 34px;
+    position: relative;
+    color: #ededed;
+    
+}
+.header__hello{
+    font-size: 38px;
+}
+.header__text{
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+/*ME*/
+.block{
+    margin-top: 25px;
+    background-color: #fff;
+    padding: 15px 40px;;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0, 0.5);
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.me{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    position: relative;
+}
+.me:after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 60%;
+    right: 20%;
+    background-color: #767676;
+    position: absolute;
+    bottom: -20px;
+    box-shadow: 0 5px 5px rgba(0,0,0, 0.2);
+}
+.avatar{
+    box-shadow: 0 0px 15px rgba(0,0,0, 0.3);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.name{
+    font-family: 'Poiret One', cursive;
+    font-size: 44px;
+    line-height: 16px;
+    font-weight: 900;
+    
+}
+.skills{
+    font-family: 'Montserrat Alternates', sans-serif; 
+    color: #767676;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+}
+.skills_text{
+    user-select: none;
+}
+
+/*Socials*/
+.square__social{
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.square__social-last{
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+.square__social-last:after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 60%;
+    right: 20%;
+    background-color: #767676;
+    position: absolute;
+    bottom: -25px;
+    box-shadow: 0 5px 5px rgba(0,0,0, 0.2);
+}
+.social__icon{
+    width: 40px;
+    height: 40px;
+}
+.social__item{
+    border-radius: 9px;
+    flex: 0.45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s linear;
+    box-shadow: 0 5px 8px rgba(0,0,0, 0.3);
+}
+.social__item:hover{
+    cursor: pointer;
+    transform: translate3d(0, -4px, 0);
+    box-shadow: 0 5px 18px rgba(0,0,0, 0.5);
+}
+.social__row{
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    color: #f2f2f2;
+    transition: all .3s linear;
+}
+.social__row:hover{
+    cursor: pointer;
+}
+.row-text{
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.whatsapp, .skype{
+    margin-right: 20px;
+}
+.whatsapp{
+    background: rgb(42, 178, 0);
+}
+.skype{
+    background: rgb(0, 184,237);
+}
+.vk{
+    background: rgb(76, 117,163);
+}
+.telegram{
+    background: rgb(97, 168,222);
+}
+.inst{
+    background: rgb(167, 64, 104);
+}
+.inst:hover, .whatsapp:hover, .skype:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:660px){
+    .headerb:before{
+        right: -10%;
+        top: -75%;
+    }
+    .skills{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+    .block{
+        padding: 15px;
+    }
+    .avatar{
+        height: 50px;
+        width: 50px;
+    }
+    .name{
+        font-size: 26px;
+        white-space: nowrap;
+    }
+    .header{
+        padding-top: 20px;
+    }
+    .header__hello{
+        font-size: 28px;
+    }
+    .header__text{
+        line-height: 20px;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
